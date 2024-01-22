@@ -10,8 +10,8 @@ test.beforeAll('Before All', async ({ browser }) => {
 })
 
 test('Login', async () => {
-    const name = "IswaryaSivakumar";
-    const pwd = "Aish@1234";
+    const name = "albeenairene";
+    const pwd = "GS39R8";
 
     const lp = new LoginPage(page);
     await lp.goTo();

@@ -3,8 +3,8 @@ const { test, expect } = require('@playwright/test');
 test('Adactin title asseertion @test', async ({ page }) => {
     await page.goto("https://adactinhotelapp.com/");
     await expect(page).toHaveTitle("Adactin.com - Hotel Reservation System");
-    await page.locator('//input[@id="username"]').type("sagayapraveen");
-    await page.locator('input[id="password"]').fill("GGE092");
+    await page.locator('//input[@id="username"]').type("albeenairene");
+    await page.locator('input[id="password"]').fill("GS39R8");
     await page.locator('id=login').click();
     await expect(page).toHaveTitle("Adactin.com - Search Hotel");
 
@@ -13,7 +13,7 @@ test('Adactin title asseertion @test', async ({ page }) => {
     await expect(err).toBe("Invalid Login details or Your Password might have expired. Click here to reset your password");*/
 
     const welcome = await page.locator('//input[@id="username_show"]').getAttribute('value');
-    await expect(welcome).toBe("Hello sagayapraveen!");
+    await expect(welcome).toBe("Hello albeenairene!");
     console.log("welcome message: " + welcome)
 
     await page.locator('//select[@id="location"]').selectOption('Sydney');
@@ -31,10 +31,10 @@ test('Adactin title asseertion @test', async ({ page }) => {
 
     await page.locator("//input[@id='continue']").click();
 
-    await page.locator("//input[@name='first_name']").fill("Praveen")
-    await expect(page.locator("//input[@name='first_name']")).toHaveValue('Praveen');
+    await page.locator("//input[@name='first_name']").fill("albeena")
+    await expect(page.locator("//input[@name='first_name']")).toHaveValue('albeena');
 
-    await page.locator("//input[@name='last_name']").fill("Messi")
+    await page.locator("//input[@name='last_name']").fill("raj")
     await page.locator("//textarea[@name='address']").fill("Chennai, Tamilnadu")
     await page.locator("//input[@name='cc_num']").fill("1234567890123456")
     await page.locator('//select[@id="cc_type"]').selectOption('American Express');

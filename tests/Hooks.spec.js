@@ -11,8 +11,8 @@ test.beforeEach('Hooks', async ({ page }) => {
 })
 
 test('Login Adactin', async ({ page }) => {
-    await page.locator('id=username').fill("sagayapraveen");
-    await page.locator('id=password').fill("Chennai@123");
+    await page.locator('id=username').fill("albeenairene");
+    await page.locator('id=password').fill("GS39R8");
     await page.locator('#login').click();
 })
 
@@ -27,7 +27,7 @@ test('Search Hotel Page', async ({ page }) => {
     await page.locator('//*[@id="Submit"]').click();
 })
 
-test.afterEach('After Each', async ({}, testInfo) => {
+test.afterEach('After Each', async ({ }, testInfo) => {
     console.log(`Finished ${testInfo.title}`);
     console.log(`with Status ${testInfo.status}`);
 })

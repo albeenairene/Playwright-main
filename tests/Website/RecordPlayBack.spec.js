@@ -1,16 +1,16 @@
 import { test, expect } from '@playwright/test';
 
 test.skip('Adactin', async ({ page }) => {
-  await page.goto('https://adactinhotelapp.com/');
-  await page.locator('#username').click();
-  await page.locator('#username').fill('sagayapraveen');
-  await page.locator('#username').press('Tab');
-  await page.locator('#password').fill('Chennai@123');
-  await page.getByRole('button', { name: 'Login' }).click();
-  await expect(page.locator('#username_show')).toBeVisible();
-  await expect(page.locator('body')).toContainText('Search Hotel');
-  await page.locator('#location').selectOption('Sydney');
-  await expect(page.locator('#location')).toHaveValue('Sydney');
+    await page.goto('https://adactinhotelapp.com/');
+    await page.locator('#username').click();
+    await page.locator('#username').fill('albeenairene');
+    await page.locator('#username').press('Tab');
+    await page.locator('#password').fill('GS39R8');
+    await page.getByRole('button', { name: 'Login' }).click();
+    await expect(page.locator('#username_show')).toBeVisible();
+    await expect(page.locator('body')).toContainText('Search Hotel');
+    await page.locator('#location').selectOption('Sydney');
+    await expect(page.locator('#location')).toHaveValue('Sydney');
 });
 
 test('Flipkart', async ({ context }) => {
